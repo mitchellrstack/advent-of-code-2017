@@ -3,6 +3,7 @@
  * around the circular list. That is, if your list contains 10 items, only include a
  * digit in your sum if the digit 10/2 = 5 steps forward matches it. Fortunately, your
  * list has an even number of elements.
+ * 
  * @author Mitchell Stack <mitchellrstack@gmail.com> (https://github.com/mitchellrstack/)
  * @param  {String} input A String of Numbers 
  * @return {Number}       The sum of matching numbers

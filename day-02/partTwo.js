@@ -3,9 +3,10 @@
  * divides the other - that is, where the result of the division operation is a whole
  * number. They would like you to find those numbers on each line, divide them, and add
  * up each line's result.
+ * 
  * @author Mitchell Stack <mitchellrstack@gmail.com> (https://github.com/mitchellrstack/)
  * @param  {String} input A String of rows of space seperated numbers
- * @return {Number}       The sum of the difference of the highs and lows of each row
+ * @return {Number}       The sum of the division of the only divisible numbers in a row
  */
 const partTwo = input => {
   const rows = input.split('\r\n')

@@ -3,6 +3,7 @@
  * recovery process is on the right track, they need you to calculate the spreadsheet's
  * checksum. For each row, determine the difference between the largest value and the
  * smallest value; the checksum is the sum of all of these differences.
+ * 
  * @author Mitchell Stack <mitchellrstack@gmail.com> (https://github.com/mitchellrstack/)
  * @param  {String} input A String of rows of space seperated numbers
  * @return {Number}       The sum of the difference of the highs and lows of each row

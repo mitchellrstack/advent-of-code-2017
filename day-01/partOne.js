@@ -3,6 +3,7 @@
  * and find the sum of all digits that match the next digit in the list. The
  * list is circular, so the digit after the last digit is the first digit in
  * the list.
+ * 
  * @author Mitchell Stack <mitchellrstack@gmail.com> (https://github.com/mitchellrstack/)
  * @param  {String} input A String of Numbers 
  * @return {Number}       The sum of matching numbers
