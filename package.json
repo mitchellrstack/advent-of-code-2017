@@ -1,0 +1,8 @@
+{
+  "name": "advent-of-code-2017",
+  "version": "1.0.0",
+  "description": "My solutions to the 2017 Advent of Code Challenge.",
+  "main": "index.js",
+  "author": "Mitchell Stack <mitchellrstack@gmail.com>",
+  "license": "MIT"
+}
