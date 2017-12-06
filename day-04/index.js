@@ -39,21 +39,22 @@ const partOne = phrase => {
  * @return {Boolean}       Whether the passphrase is valid or not
  */
 const partTwo = phrase => {
-  // Split words into array
-  const words = phrase.split(' ')
-
-  // Sort the array to be in order and each word with its letters sorted
-  const sorted = words.sort().map(word => word.split('').sort().join(''))
-
-  // Check if there are any matches of same words
-  for (let i = 0; i < sorted.length - 1; i++) {
-    if (sorted[i] === sorted[i + 1]) {
-      return false
-    }
-  }
-
-  // Return true if there are no matches
-  return true
+  return (isValidDuplicates(phrase) && isValidAnagram(phrase))
 }
+
+const isValidDuplicates = phrases => {
+  const words = phrases.split(' ')
+  // Sets can only contain unique entries so quick way to remove anything not unique
+  // I didn't know about Sets until this challenge!
+  return words.length === new Set(words).size
+}
+
+const hasAnagram = phrase => {
+  const words = phrase.split(' ')
+  // Sets can only contain unique entries so quick way to remove anything not unique
+  return words.length !== new Set(words.map(w => w.split('').sort().join(''))).size
+}
+
+const isValidAnagram = phrase => !hasAnagram(phrase)
 
 module.exports = { partOne, partTwo }
